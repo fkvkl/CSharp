@@ -15,7 +15,7 @@ namespace Crm
             //Take the screenshot
             Screenshot image = ((ITakesScreenshot)Driver.Get()).GetScreenshot();
             // full path to the screenshot location
-            string target = "C:/Users/ferhat/source/repos/vytrack/vytrack/screenshoots/" + name + date + ".png";
+            string target = "C:/Users/ferhat/source/repos/screenshots/" + name + date + ".png";
             //Save the screenshot
             image.SaveAsFile(target);
 
