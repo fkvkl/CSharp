@@ -61,7 +61,7 @@ namespace Crm.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to UserUser.
+        ///   Looks up a localized string similar to ****.
         /// </summary>
         internal static string Password {
             get {
@@ -70,7 +70,7 @@ namespace Crm.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to https://qa.nextbasecrm.com/.
+        ///   Looks up a localized string similar to https://*****.com/.
         /// </summary>
         internal static string Url {
             get {
@@ -79,7 +79,7 @@ namespace Crm.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to hr60@cybertekschool.com.
+        ///   Looks up a localized string similar to ******.
         /// </summary>
         internal static string Username {
             get {
