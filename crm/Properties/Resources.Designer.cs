@@ -70,7 +70,7 @@ namespace Crm.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to https://*****.com/.
+        ///   Looks up a localized string similar to ***.
         /// </summary>
         internal static string Url {
             get {
@@ -79,7 +79,7 @@ namespace Crm.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ******.
+        ///   Looks up a localized string similar to ***.
         /// </summary>
         internal static string Username {
             get {

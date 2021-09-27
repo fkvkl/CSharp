@@ -1,16 +1,12 @@
 ﻿using OpenQA.Selenium;
-using System;
-using System.Collections.Generic;
-using System.Text;
+
 
 namespace Crm.Pages
 {
-    public class HomePage
+    public class HomePage : BasePage
     {
-        private IWebDriver driver;
-        public HomePage(IWebDriver _driver)
+        public HomePage(IWebDriver _driver) : base(_driver)
         {
-            driver = _driver;
         }
 
         public IWebElement ongoing => driver.FindElement(By.XPath("//div[@class='main-ui-square-item'][2]"));

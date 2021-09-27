@@ -1,11 +1,12 @@
-﻿using Crm.Drivers;
+﻿
+using DemoBlaze.Drivers;
 using OpenQA.Selenium;
 using System;
 using System.Collections.Generic;
 using System.Threading;
 using TechTalk.SpecFlow;
 
-namespace Crm
+namespace DemoBlaze
 {
     public class BrowserUtils
     {
@@ -28,6 +29,8 @@ namespace Crm
             Driver.Get().Manage().Timeouts().PageLoad = TimeSpan.FromSeconds(sec);
         }
 
+        
+
         public static void waitFor(int seconds)
         {
             try
@@ -40,6 +43,11 @@ namespace Crm
             }
         }
 
+
+        /**
+     * Switches to new window by the exact title. Returns to original window if target title not found
+     * @param targetTitle
+     */
         public static void SwitchToWindow(string targetTitle, IWebDriver driver)
         {
             string origin = Driver.Get().CurrentWindowHandle;
@@ -65,6 +73,27 @@ namespace Crm
         }
 
     }
+
+    /**
+     * Moves the mouse to given element
+     *
+     * @param element on which to hover
+     */
+    /*public static void Hover(IWebElement element)
+    {
+        Action action = new Action(Driver.Get());
+
+        action.MoveToElement(element).Build.Perform();
+    }*/
+
+
+    /**
+     * return a list of string from a list of elements
+     *
+     * @param list of webelements
+     * @return list of string
+     */
+
 
 
 
