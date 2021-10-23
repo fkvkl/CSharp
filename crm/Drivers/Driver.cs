@@ -16,36 +16,29 @@ namespace Crm.Drivers
             // Test
             if (driver == null)
             {
-                // this line will tell which browser should open based on the value from properties file
                 string browser = "chrome";
                 switch (browser)
                 {
                     case "chrome":
                         driver = new ChromeDriver();
+                        break;                               
+                    
+                    case "firefox":
+                        driver=new FirefoxDriver();
                         break;
-                        /* case "chrome-headless":
-                             
-                             break;
-                         case "firefox":
-                             
-                             break;
-                         case "firefox-headless":
-                             
-                             break;
-                         case "ie":
-                             
-                             break;
+                         
+                    case "ie":
+                        driver= new InternetExplorerDriver();
+                        break;
 
-                         case "edge":
-                            
-                             break;
+                    case "edge":
+                        driver= new EdgeDriver();
+                        break;
 
-                         case "safari":
-                             
-                         break;
-                     */
+                    case "safari":
+                        driver=new SafariDriver();    
+                        break;
                 }
-
             }
 
             return driver;
