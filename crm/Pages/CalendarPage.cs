@@ -89,7 +89,6 @@ namespace Crm.Pages
                 {
                     Driver.Get().FindElement(By.XPath("//div[@class='bx-finder-company-department-employee-name' " +
                             "and Contains(text(),'" + s + "')]")).Click();
-
                 }
             }
             else

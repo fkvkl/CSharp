@@ -23,6 +23,7 @@ namespace Crm
 
             return target;
         }
+
         public static void waitForPageToLoad(int sec)
         {
             Driver.Get().Manage().Timeouts().PageLoad = TimeSpan.FromSeconds(sec);
@@ -64,7 +65,4 @@ namespace Crm
             return dictionary;
         }
     }
-
-
-
 }

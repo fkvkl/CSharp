@@ -20,7 +20,6 @@ namespace Crm.Hooks
         [AfterScenario]
         public void AfterScenario(ScenarioContext scenarioContext)
         {
-
             if (scenarioContext.TestError != null)
             {
                 string date = DateTime.Now.ToString("yyyyMMddhhmmss");

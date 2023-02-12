@@ -26,7 +26,6 @@ namespace Crm.Steps
             loginPage.login();
         }
 
-
         [Then(@"User should be able land on the home page and page title should contain ""(.*)""\.")]
         public void ThenUserShouldBeAbleLandOnTheHomePageAndPageTitleShouldContain_(string p0)
         {
@@ -34,7 +33,5 @@ namespace Crm.Steps
             string actual = driver.Title;
             Assert.IsTrue(actual.Contains(p0));
         }
-
-
     }
 }

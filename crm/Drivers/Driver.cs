@@ -6,9 +6,8 @@ namespace Crm.Drivers
     public class Driver
     {
         private static IWebDriver driver;
-        private Driver()
+        private Driver() 
         {
-
         }
 
         public static IWebDriver Get()

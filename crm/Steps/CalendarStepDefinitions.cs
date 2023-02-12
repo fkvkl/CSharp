@@ -27,7 +27,6 @@ namespace Crm.Steps
             loginPage.login();
         }
      
-
         [Given(@"user clicks ""(.*)"" menu")]
         public void GivenUserClicksMenu(string menu)
         {
@@ -68,8 +67,6 @@ namespace Crm.Steps
             var selectAvailability = new SelectElement(calendarPage.availability);
             selectAvailability.SelectByText(data["Availability"]);
         }
-
-
 
         [When(@"user enters the below event details")]
         public void WhenUserEntersTheBelowEventDetails(Table table)
