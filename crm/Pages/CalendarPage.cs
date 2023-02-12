@@ -18,6 +18,7 @@ namespace Crm.Pages
         {
             return firstEventName;
         }
+        
         public string getEditedEventName()
         {
             return editedEventName;
@@ -67,8 +68,6 @@ namespace Crm.Pages
         public IWebElement reset => driver.FindElement(By.XPath("(//span[Contains(text(),'Reset')])[2]"));
         public IWebElement delete => driver.FindElement(By.XPath("//span[.='Delete']"));
 
-
-
         public void eventDescription(string description)
         {
             Driver.Get().SwitchTo().Frame(descriptionFrame);
@@ -76,7 +75,6 @@ namespace Crm.Pages
             descriptionInput.SendKeys(description);
             Driver.Get().SwitchTo().DefaultContent();
         }
-
 
         public void addAttendees(string list)
         {
@@ -110,7 +108,6 @@ namespace Crm.Pages
             colorCode.SendKeys(colorAsHex + Keys.Enter);
         }
 
-
         string eventLocatorFinder(string event_, string date)
         {
             string[] array = date.Split("/");
@@ -123,6 +120,7 @@ namespace Crm.Pages
                     + event_ + "']";
             return locator;
         }
+        
         public IWebElement eventColor(string event_, string date)
         {
             IWebElement colorLocator;
