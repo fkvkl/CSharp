@@ -1,4 +1,3 @@
-﻿
 using Crm.Properties;
 using OpenQA.Selenium;
 
