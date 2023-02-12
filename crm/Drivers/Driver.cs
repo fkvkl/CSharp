@@ -22,25 +22,20 @@ namespace Crm.Drivers
                     case "chrome":
                         driver = new ChromeDriver();
                         break;                               
-                    
                     case "firefox":
                         driver=new FirefoxDriver();
                         break;
-                         
                     case "ie":
                         driver= new InternetExplorerDriver();
                         break;
-
                     case "edge":
                         driver= new EdgeDriver();
                         break;
-
                     case "safari":
                         driver=new SafariDriver();    
                         break;
                 }
             }
-
             return driver;
         }
 
